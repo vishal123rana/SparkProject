@@ -1,4 +1,4 @@
-package Streaming
+package StructuredStreaming
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.catalyst.dsl.expressions.StringToAttributeConversionHelper
