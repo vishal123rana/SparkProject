@@ -1,4 +1,4 @@
-[warn] kafka-clients-2.6.0-sources.jar no longer exists at \home\vishal\.cache\coursier\v1\https\repo1.maven.org\maven2\org\apache\kafka\kafka-clients\2.6.0\kafka-clients-2.6.0-sources.jar
-[debug] "not up to date. inChanged = false, force = false
+[debug] "not up to date. inChanged = true, force = false
 [debug] Updating ProjectRef(uri("file:/C:/Users/vishal%20rana/IdeaProjects/SparkProject/"), "sparkproject")...
 [debug] Done updating ProjectRef(uri("file:/C:/Users/vishal%20rana/IdeaProjects/SparkProject/"), "sparkproject")
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.

@@ -1,8 +1,8 @@
 package StructuredStreaming
 
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.catalyst.dsl.expressions.StringToAttributeConversionHelper
-import org.apache.spark.sql.functions.{col, column, desc, window}
+import org.apache.spark.sql.functions.{col, window}
+
 object StreamingDemo {
     def main(arg:Array[String]):Unit= {
       val spark = SparkSession.builder().master("local").appName("Application").getOrCreate()
