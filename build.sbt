@@ -6,18 +6,14 @@ scalaVersion := "2.11.12"
 
 // https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients
 libraryDependencies += "org.apache.kafka" % "kafka-clients" % "2.6.0"
-libraryDependencies += "org.apache.spark" %% "spark-streaming-kafka" % "1.6.0"
 // https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-kafka-0-10
 libraryDependencies += "org.apache.spark" %% "spark-streaming-kafka-0-10" % "2.4.7"
-
-libraryDependencies += "org.apache.spark" %% "spark-sql-kafka-0-10"%"2.4.5"
 
 // https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-hdfs
 libraryDependencies += "org.apache.hadoop" % "hadoop-hdfs" % "2.9.2"
 
 // https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-mapreduce-client-core
 libraryDependencies += "org.apache.hadoop" % "hadoop-mapreduce-client-core" % "2.9.2"
-
 // https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-yarn-client
 libraryDependencies += "org.apache.hadoop" % "hadoop-yarn-client" % "2.9.2"
 

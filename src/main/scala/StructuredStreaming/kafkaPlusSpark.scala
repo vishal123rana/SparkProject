@@ -2,7 +2,7 @@ package StructuredStreaming
 
 import org.apache.kafka.clients.consumer.ConsumerConfig
 import org.apache.kafka.common.serialization.StringDeserializer
-import org.apache.spark.SparkConf
+import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 import org.apache.spark.streaming.kafka010.KafkaUtils
@@ -20,7 +20,9 @@ object kafkaPlusSpark {
             ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG->classOf[StringDeserializer],
             ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG->classOf[StringDeserializer]
         )
+
       val spark = SparkSession.builder().master("local").appName("Application").getOrCreate()
+
     //  val streaming = spark.readStream.format("kafka").option("kafka.bootstrap.servers","localhost:9092").option("subscribe","test").load();
       //streaming.foreach(x=>println(x))
 //      val query = streaming.writeStream
